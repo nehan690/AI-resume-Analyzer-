@@ -1,0 +1,6 @@
+
+{
+  "name": "AI Resume Analyzer",
+  "description": "A powerful AI-driven tool to optimize your resume for ATS systems and job applications using Google Gemini.",
+  "requestFramePermissions": []
+}
