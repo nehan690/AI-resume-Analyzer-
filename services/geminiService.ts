@@ -2,7 +2,7 @@
 import { GoogleGenAI, Type } from "@google/genai";
 // Updated imports to include newly added types for code analysis and chat functionality
 import { ResumeAnalysis, Language, AnalysisTab, Message } from "../types";
-
+//dgh
 // Always use const ai = new GoogleGenAI({apiKey: process.env.API_KEY});
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
