@@ -4,7 +4,12 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { ResumeAnalysis, Language, AnalysisTab, Message } from "../types";
 //dgh
 // Always use const ai = new GoogleGenAI({apiKey: process.env.API_KEY});
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+
+if (!API_KEY) {
+  throw new Error("VITE_GEMINI_API_KEY is not defined");
+}
+const ai = new GoogleGenAI({ apiKey: API_KEY });
 
 const SYSTEM_PROMPT = `You are a professional HR Expert and Career Coach with deep expertise in Applicant Tracking Systems (ATS). 
 Your goal is to provide a comprehensive, honest, and actionable analysis of a candidate's resume. 
