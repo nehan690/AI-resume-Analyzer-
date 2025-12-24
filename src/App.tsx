@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
 import { FileText, Award, AlertCircle, Search, Lightbulb, UserPlus, CheckCircle, Copy, Loader2, Sparkles, Target, Briefcase } from 'lucide-react';
-import { analyzeResume } from './services/geminiService';
-import { ResumeAnalysis, AnalysisState } from './types';
+import { analyzeResume } from '../services/geminiService';
+import { ResumeAnalysis, AnalysisState } from '../types';
 
 const App: React.FC = () => {
   const [resumeText, setResumeText] = useState('');
